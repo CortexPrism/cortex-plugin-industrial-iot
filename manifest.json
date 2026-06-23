@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-industrial-iot",
-  "version": "1.0.0",
-  "description": "Industrial IoT & Modbus PLC Agent — Connect to Modbus TCP, PLCs, SCADA for sensor data, actuator control, predictive maintenance",
+  "version": "1.0.1",
+  "description": "Industrial IoT & Modbus PLC Agent \u2014 Connect to Modbus TCP, PLCs, SCADA for sensor data, actuator control, predictive maintenance",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,9 +9,16 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-industrial-iot",
   "homepage": "https://cortexprism.io/marketplace/plugins/industrial-iot",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "iot_connect_device", "description": "Connect to Modbus TCP device", "params": [] },
+    {
+      "name": "iot_connect_device",
+      "description": "Connect to Modbus TCP device",
+      "params": []
+    },
     {
       "name": "iot_read_sensors",
       "description": "Read sensor data from connected devices",
@@ -27,9 +34,20 @@
       "description": "Analyze data for maintenance predictions",
       "params": []
     },
-    { "name": "iot_generate_report", "description": "Generate shift report", "params": [] }
+    {
+      "name": "iot_generate_report",
+      "description": "Generate shift report",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
